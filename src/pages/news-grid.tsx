@@ -81,7 +81,7 @@ const NewsGrid = () => {
             </tr>
           </thead>
           <tbody>
-            {articles.map((article, index) => (
+            {articles?.map((article, index) => (
               <tr key={index}>
                 <td
                   style={{
