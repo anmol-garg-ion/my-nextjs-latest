@@ -1,15 +1,15 @@
 .main_container {
     display: flex;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
   }
   
-  .form_container {
+  /* .form_container {
     width: 50%;
   }
-  
-  .input_content {
+   */
+  /* .input_content {
     display: flex;
     flex-direction: column;
   }
@@ -21,8 +21,8 @@
     border: 1px solid #ccc;
     border-radius: 0.5rem;
   }
-  
-  .submit_button {
+   */
+  /* .submit_button {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid #ccc;
@@ -33,4 +33,5 @@
   .submit_button:hover {
     background-color: #ccc;
     color: #000;
-  }
+  } */
+

@@ -18,6 +18,7 @@
 
 import { useState } from "react";
 import styled from "../styles/Home.module.css";
+import NewsGrid from "./news-grid";
 
 export default function HomePage() {
   const [verifyOTP, setVerifyOTP] = useState(false);
@@ -28,53 +29,11 @@ export default function HomePage() {
   return (
     <>
       <div className={styled.main_container}>
-        <iframe
-          src="https://en.wikipedia.org/wiki/Capital_market"
-          width="100%"
-          height="800px"
-        ></iframe>
+        {/* <iframe src="news-grid" width="100%" height="800px"></iframe> */}
+        <div style={{ padding: "0px 20px 0px 20px" }}>
+          <NewsGrid></NewsGrid>
+        </div>
       </div>
-      {/* {verifyOTP == false ? (
-        <div className={styled.main_container}>
-          <form className={styled.form_container} action="">
-            <div className={styled.input_content}>
-              <label htmlFor="phone_number">Phone</label>
-              <input
-                className={styled.input_class}
-                type="text"
-                name="phone_number"
-                id="phoneNumber"
-              />
-            </div>
-            <button
-              onClick={() => {
-                handleVerifyOTPClick();
-              }}
-              className={styled.submit_button}
-              type="submit"
-            >
-              Send OTP
-            </button>
-          </form>
-        </div>
-      ) : (
-        <div className={styled.main_container}>
-          <form className={styled.form_container} action="">
-            <div className={styled.input_content}>
-              <label htmlFor="opt_number">Enter OTP</label>
-              <input
-                className={styled.input_class}
-                type="text"
-                name="otp_number"
-                id="otpNumber"
-              />
-            </div>
-            <button className={styled.submit_button} type="submit">
-              Verify OTP
-            </button>
-          </form>
-        </div>
-      )} */}
     </>
   );
 }
