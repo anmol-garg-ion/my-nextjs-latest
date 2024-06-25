@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-block: .5rem;
+    padding-inline: 1.5rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    background-color: #12264a;
+}
+/* .logo_container {
+    
+} */
+.logo_image {
+    height: 3.5rem;
+    aspect-ratio: 3/2;
+}
+.menu_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.menu_container li {
+    list-style: none;
+    font-size: 1rem;
+}

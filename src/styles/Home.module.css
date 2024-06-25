@@ -1,0 +1,36 @@
+.main_container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form_container {
+    width: 50%;
+  }
+  
+  .input_content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input_class {
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+  }
+  
+  .submit_button {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .submit_button:hover {
+    background-color: #ccc;
+    color: #000;
+  }
