@@ -1,9 +1,16 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import styled from "../styles/news.module.css";
+
+interface Article {
+  title: string;
+  description: string;
+  source: {
+    name: string;
+  };
+}
 
 const NewsGrid = () => {
-  const [articles, setArticles] = useState([]);
+  const [articles, setArticles] = useState<Article[]>([]);
   const router = useRouter();
 
   useEffect(() => {
@@ -13,7 +20,7 @@ const NewsGrid = () => {
           "https://newsapi.org/v2/top-headlines?country=us&apiKey=b5a2b8b283844a40bf1e1dd12779d760"
         );
         const data = await response.json();
-        setArticles(data.articles);
+        setArticles(data.articles as Article[]);
       } catch (error) {
         console.error("Error fetching news:", error);
       }
