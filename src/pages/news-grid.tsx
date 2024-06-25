@@ -23,7 +23,14 @@ const NewsGrid = () => {
   }, []);
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div
+      style={{
+        padding: "10px 20px 50px 20px",
+        boxShadow: "1px 1px 10px black",
+        marginTop: "40px",
+        borderRadius: "10px",
+      }}
+    >
       <h1>Top News</h1>
       <div style={{ height: "600px", overflowY: "auto" }}>
         <table
